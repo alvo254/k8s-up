@@ -25,4 +25,11 @@ You can use minikube service <service-name>
     - minikube service fitness
     or
     - kubectl get svc
-    
+
+# Strategy to rollout updates
+ - There are 2 strategies to supported by deployment 
+    - Recreate
+    - RollingUpdate
+
+ - kubectl rollout history deployment fitness
+ - kubectl rollout status deployment fitness
