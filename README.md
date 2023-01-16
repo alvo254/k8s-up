@@ -16,7 +16,16 @@ So far everything i am doing is using the kubectl to create deployments and serv
 ## Updating deployment and rolling back to previous deployment
  - kubectl set image deployment <deploymnent-name> <deployment-pod "same as deployment-name">=<image-to-replace-deployment>
  - kubectl set image deployment nginx-app nginx-app=nginx:1.16.4
- 
+
+If you want more details about a particular revisio ass to --revision flag
+ - kubectl rollout history deployment fitness --revision=2
+
+To select a version you want to role back to 
+ - kubectl rollout undo deployment fitness --to-revision=3
+
+To role back to the lets call it latest tag which is pulled by default if you dont specify the image tag
+ - kubectl rollout undo deployment fitness
+
 
 ## Create deployment
 kubectl create deployment <name-of-deployment> --image=<image> 
