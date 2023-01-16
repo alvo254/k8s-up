@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels: 
-    app: mongodb-depl
+    app: mongodb-depl 
   name: mongodb-depl
 spec:
   replicas: 1

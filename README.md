@@ -33,3 +33,10 @@ You can use minikube service <service-name>
 
  - kubectl rollout history deployment fitness
  - kubectl rollout status deployment fitness
+
+## Namespaces
+ - kubectl get deployment -n default or kubectl get deployment --namespace=dev
+ - kubectl apply -f <service.yaml> --namespace=<name-of-namespace>
+
+This can also be done by specifying the namespace in the configuration file metadata
+NB: You can use a tool called kubens to chose the default namespace to work with instead of back and forth 
