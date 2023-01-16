@@ -13,6 +13,11 @@
 
 So far everything i am doing is using the kubectl to create deployments and services
 
+## Updating deployment and rolling back to previous deployment
+ - kubectl set image deployment <deploymnent-name> <deployment-pod "same as deployment-name">=<image-to-replace-deployment>
+ - kubectl set image deployment nginx-app nginx-app=nginx:1.16.4
+ 
+
 ## Create deployment
 kubectl create deployment <name-of-deployment> --image=<image> 
 kubectl create deployment fitness --image=alvin254/k8s-up
