@@ -1,4 +1,6 @@
 # k8s-up
+## Best practice
+ - It is better to create pods declarative i.e with config files than imperative with kubectl command
 ## You can ssh into you minikube node by
     - get minikube ip with minikube ip
     - ssh docker@<minikube ip> : password=tcuser
@@ -40,3 +42,5 @@ You can use minikube service <service-name>
 
 This can also be done by specifying the namespace in the configuration file metadata
 NB: You can use a tool called kubens to chose the default namespace to work with instead of back and forth 
+ - kubens :- this will display the current namespace
+ - kubens dev :- this will make dev the default namespaces without providing the --namespace option
