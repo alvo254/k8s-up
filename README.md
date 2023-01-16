@@ -19,3 +19,10 @@ kubectl create deployment fitness --image=alvin254/k8s-up
 ## Create service
 kubectl expose deployment <name-of-deployment> --type=<type-of-service> --port=<port-to-expose>
 kubectl expose deployment fitness --type=NodePort --port=3000
+
+## To see service 
+You can use minikube service <service-name>
+    - minikube service fitness
+    or
+    - kubectl get svc
+    
