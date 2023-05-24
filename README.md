@@ -10,6 +10,7 @@
  - Link for project: https://github.com/alvo254/fitness-hero-V2.git
  - Docker image: docker pull alvin254/k8s-up
  - docker run -p 3000:3000 alvin254/k8s-up
+ 
 
 So far everything i am doing is using the kubectl to create deployments and services
 
