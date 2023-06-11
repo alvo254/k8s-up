@@ -61,4 +61,10 @@ NB: You can use a tool called kubens to chose the default namespace to work with
  - kubens dev :- this will make dev the default namespaces without providing the --namespace option
  
  
-## Isolavent
+
+## Pods in Kubernetes
+A Pod is a collection of application containers and volumes running in the same execution environment. Pods, not containers, are the smallest deployable artifact in a Kubernetes cluster. This means all of the containers in a Pod always land on the same machine.
+Each container within a Pod runs in its own cgroup, but they share a number of Linux namespaces.
+Applications running in the same Pod share the same IP address and port space (network namespace), have the same hostname (UTS namespace), and can commu‐ nicate using native interprocess communication channels over System V IPC or POSIX message queues (IPC namespace). However, applications in different Pods are isolated from each other; they have different IP addresses, hostnames, and more. Containers in different Pods running on the same node might as well be on different servers.
+
+
